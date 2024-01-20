@@ -13,7 +13,7 @@ CREATE TABLE people
     zipcode             VARCHAR(10),
     createdat           TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT pk_people_id PRIMARY KEY (id),
-    CONSTRAINT fk_people_id PRIMARY KEY (id),
+    CONSTRAINT fk_people_stateid FOREIGN KEY (stateid) REFERENCES states(id) ON DELETE SET NULL ON UPDATE CASCADE
 );
 COMMENT ON TABLE people IS 'Cadastro de Pessoas';
 COMMENT ON COLUMN people.id IS 'ID do cadastro';

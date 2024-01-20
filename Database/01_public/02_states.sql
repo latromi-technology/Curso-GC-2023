@@ -5,9 +5,9 @@ CREATE TABLE states
     countryid       INT NOT NULL,
     name            VARCHAR(100) NOT NULL,
     alpha2          VARCHAR(2) NOT NULL,
-    CONSTRAINT pk_state_id PRIMARY KEY (id),
-    CONSTRAINT uk_state_countryid_alpha2 UNIQUE (countryid, alpha2),
-    CONSTRAINT fk_state_countryid FOREIGN KEY (countryid) REFERENCES countries(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT pk_states_id PRIMARY KEY (id),
+    CONSTRAINT uk_states_countryid_alpha2 UNIQUE (countryid, alpha2),
+    CONSTRAINT fk_states_countryid FOREIGN KEY (countryid) REFERENCES countries(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 -- O comando abaixo insere todos os estados brasileiros --
 WITH lines AS(

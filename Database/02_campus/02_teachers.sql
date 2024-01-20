@@ -5,7 +5,7 @@ CREATE TABLE teachers
     personid        INT NOT NULL,
     subjecttaught   VARCHAR(100),
     CONSTRAINT pk_teachers_id PRIMARY KEY (id),
-    CONSTRAINT fk_teachers_personid FOREIGN KEY (personid) REFERENCES person(id) ON DELETE RESTRICT ON UPDATE CASCADE
+    CONSTRAINT fk_teachers_personid FOREIGN KEY (personid) REFERENCES people(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 COMMENT ON TABLE teachers IS 'Cadastro de professores';
 COMMENT ON COLUMN teachers.id IS 'ID do professor';

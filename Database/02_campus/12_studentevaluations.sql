@@ -1,16 +1,16 @@
 -- Avalição geral dos alunos --
 CREATE TABLE studentevaluations 
 (
-    id              SERIAL PRIMARY KEY,
+    id              SERIAL NOT NULL,
     studentid       INT NOT NULL,
     teacherid       INT NOT NULL,
     evaluationdate  DATE,
     score           SMALLINT,
-    comments        TEXT,
+    notes        	TEXT,
     CONSTRAINT pk_classattendances_id PRIMARY KEY (id),
     CONSTRAINT fk_classattendances_studentid FOREIGN KEY (studentid) REFERENCES students (id) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT fk_classattendances_teacherid FOREIGN KEY (teacherid) REFERENCES teachers (id) ON DELETE CASCADE ON UPDATE CASCADE,
-    CONSTRAINT ck_classattendances_score CHECK(score BETWEEN 1 AND 5),
+    CONSTRAINT ck_classattendances_score CHECK(score BETWEEN 1 AND 5)
 );
 COMMENT ON TABLE studentevaluations IS 'Essa tabela permite ao professor fazer avaliações gerais de cada aluno em datas específicas.';
 COMMENT ON COLUMN studentevaluations.id IS 'ID da avaliação';

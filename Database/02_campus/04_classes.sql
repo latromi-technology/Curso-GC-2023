@@ -9,7 +9,7 @@ CREATE TABLE classes
     scheduledescription TEXT,
     CONSTRAINT pk_classes_id PRIMARY KEY (id),
     CONSTRAINT fk_classes_courseid FOREIGN KEY (courseid) REFERENCES courses(id) ON DELETE RESTRICT ON UPDATE CASCADE,
-    CONSTRAINT fk_classes_teacherid FOREIGN KEY (teacherid) REFERENCES teachers(id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT fk_classes_teacherid FOREIGN KEY (teacherid) REFERENCES teachers(id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 COMMENT ON TABLE classes IS 'Cadastro de Turmas';
 COMMENT ON COLUMN classes.id IS 'ID da turma';

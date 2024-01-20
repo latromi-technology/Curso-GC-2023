@@ -9,4 +9,4 @@ CREATE TABLE classes_students
 );
 COMMENT ON TABLE classes_students IS 'Essa tabela faz a associação dos alunos a uma turma.';
 COMMENT ON COLUMN classes_students.classid IS 'ID da turma';
-COMMENT ON COLUMN classes_students.monitorid IS 'ID do aluno';
+COMMENT ON COLUMN classes_students.studentid IS 'ID do aluno';

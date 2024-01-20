@@ -15,7 +15,7 @@ CREATE TABLE submissions
 );
 COMMENT ON TABLE submissions is 'Nessa tabela são gravadas as atividades entregues pelos alunos';
 COMMENT ON COLUMN submissions.id is 'ID da avaliação';
-COMMENT ON COLUMN submissions.studentidid is 'ID do estudante';
+COMMENT ON COLUMN submissions.studentid is 'ID do estudante';
 COMMENT ON COLUMN submissions.activityid is 'ID da atividade';
 COMMENT ON COLUMN submissions.submissiondate is 'Data de entrega do trabalho';
 COMMENT ON COLUMN submissions.submittedfileurl is 'URL do arquivo entregue';

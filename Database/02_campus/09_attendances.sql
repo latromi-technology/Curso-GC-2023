@@ -7,7 +7,7 @@ CREATE TABLE attendances
     attendancedate      DATE NOT NULL,
     ispresent           BOOLEAN NOT NULL DEFAULT FALSE,
     CONSTRAINT pk_attendances_id PRIMARY KEY (id),
-    CONSTRAINT fk_attendances_studentid FOREIGN KEY (studentidid) REFERENCES students(id) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_attendances_studentid FOREIGN KEY (studentid) REFERENCES students(id) ON DELETE CASCADE ON UPDATE CASCADE,
     CONSTRAINT fk_attendances_classid FOREIGN KEY (classid) REFERENCES classes(id) ON DELETE CASCADE ON UPDATE CASCADE
 );
 COMMENT ON TABLE attendances IS 'Essa tabela permite que o professor faça o registro de frequência dos alunos';

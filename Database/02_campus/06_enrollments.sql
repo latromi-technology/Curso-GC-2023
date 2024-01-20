@@ -8,7 +8,7 @@ CREATE TABLE enrollments
     phone           VARCHAR(20), 
     enrollmentdate  DATE NOT NULL,
     classid         INT NOT NULL,
-    status          SMALLINT INT NOT NULL DEFAULT 0,
+    status          SMALLINT NOT NULL DEFAULT 0,
     notes           TEXT,
     CONSTRAINT pk_enrollments_id PRIMARY KEY (id),
     CONSTRAINT fk_enrollments_classid FOREIGN KEY (classid) REFERENCES classes (id) ON DELETE RESTRICT ON UPDATE CASCADE,

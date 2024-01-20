@@ -9,7 +9,7 @@ CREATE TABLE students
     linkedinurl     VARCHAR(100),
     notes           TEXT,
     CONSTRAINT pk_students_id PRIMARY KEY (id),
-    CONSTRAINT fk_students_personid FOREIGN KEY (personid) REFERENCES person (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+    CONSTRAINT fk_students_personid FOREIGN KEY (personid) REFERENCES people (id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_students_courseid FOREIGN KEY (courseid) REFERENCES courses (id) ON DELETE RESTRICT ON UPDATE CASCADE,
     CONSTRAINT fk_students_enrollment FOREIGN KEY (enrollmentid) REFERENCES enrollments (id) ON DELETE RESTRICT ON UPDATE CASCADE
 );
