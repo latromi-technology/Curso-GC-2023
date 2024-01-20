@@ -1,10 +1,12 @@
--- Estudantes  --
+-- Cadastro de Estudantes  --
 CREATE TABLE students
 (
     id              SERIAL NOT NULL,
     personid        INT NOT NULL,
     courseid        INT NOT NULL,
-    enrollmentid    INT NOT NULL,
+    enrollmentid    INT,
+    githuburl       VARCHAR(100),
+    linkedinurl     VARCHAR(100),
     notes           TEXT,
     CONSTRAINT pk_students_id PRIMARY KEY (id),
     CONSTRAINT fk_students_personid FOREIGN KEY (personid) REFERENCES person (id) ON DELETE RESTRICT ON UPDATE CASCADE,
@@ -16,4 +18,6 @@ COMMENT ON COLUMN students.id IS 'ID do aluno';
 COMMENT ON COLUMN students.personid IS 'ID do aluno no cadastro de pessoas';
 COMMENT ON COLUMN students.courseid IS 'ID do curso';
 COMMENT ON COLUMN students.enrollmentid IS 'ID da inscrição';
+COMMENT ON COLUMN students.githuburl IS 'URL do Github do aluno';
+COMMENT ON COLUMN students.githuburl IS 'URL do Linkedin do aluno';
 COMMENT ON COLUMN students.notes IS 'Campo livre para observações';
