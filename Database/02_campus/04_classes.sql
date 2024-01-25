@@ -2,6 +2,7 @@
 CREATE TABLE classes
 (
     id                  SERIAL NOT NULL,
+    name                VARCHAR(20) NOT NULL,
     courseid            INT NOT NULL,
     teacherid           INT NOT NULL,
     startdate           DATE,
@@ -13,7 +14,10 @@ CREATE TABLE classes
 );
 COMMENT ON TABLE classes IS 'Cadastro de Turmas';
 COMMENT ON COLUMN classes.id IS 'ID da turma';
+COMMENT ON COLUMN classes.name IS 'Nome da turma. Exemplo: Turma 2023';
 COMMENT ON COLUMN classes.teacherid IS 'ID do professor';
 COMMENT ON COLUMN classes.startdate IS 'Data de início da turma';
 COMMENT ON COLUMN classes.enddate IS 'Data de fim da turma';
 COMMENT ON COLUMN classes.scheduledescription IS 'Campo livre para descrever dias e horários das aulas';
+
+
