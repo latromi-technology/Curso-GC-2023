@@ -1,4 +1,4 @@
-# Cadastros de Pessoas
+# Cadastros de Cursos
 
 ## Visão Geral
 Este é o cadastro de Cursos do Campus Caldeira. Exmplos de cursos que podem ser cadastrados: 
