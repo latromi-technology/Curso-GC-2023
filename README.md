@@ -6,9 +6,9 @@
 | Operação | Nome      | Cor
 |----------|-----------|-----
 | Edição   | fa-pencil | Blue
-| Exclusão | fa-ties   | Red
+| Exclusão | fa-times   | Red
 | Adicionar | fa-plus  | Green
-| Confirar | fa-chek-circle | Green
+| Confirmar | fa-chek-circle | Green
 
 ### Nome de Colunas
 | Operação | Nome
