@@ -4,11 +4,12 @@
 
 ### Ícones
 | Operação | Nome      | Cor
-|----------|-----------|-----
-| Edição   | fa-pencil | Blue
-| Exclusão | fa-times   | Red
-| Adicionar | fa-plus  | Green
-| Confirmar | fa-chek-circle | Green
+|-------------|-----------|-----
+| Edição      | fa-pencil | Blue
+| Exclusão    | fa-times  | Red
+| Desassociar | fa-minus  | Red
+| Adicionar   | fa-plus   | Green
+| Confirmar   | fa-chek-circle | Green
 
 ### Nome de Colunas
 | Operação | Nome
