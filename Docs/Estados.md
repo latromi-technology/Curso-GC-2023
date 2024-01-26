@@ -8,7 +8,7 @@ Criar um objeto do tipo "Browser" para permitir a pesquisa de estados em campos 
 
 Listar as seguintes informações:
 
-| Coluna             | Comentário
+| Coluna             | Comentários
 |--------------------|-----
 | Id                 | Id do Estados (Oculto)
 | Estado             | Nome do Estado
@@ -21,3 +21,6 @@ _Atenção: Será necessário buscar o nome do país na tabela de países. Faça
 
 - Tabela de estados: `public.states`
 - Tabela de países: `public.countries`
+
+
+

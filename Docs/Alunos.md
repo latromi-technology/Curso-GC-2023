@@ -21,7 +21,7 @@ Criar um objeto do tipo "Consulta" para listar os dados dos alunos.
 ### Colunas
 Listar as seguintes informações:
 
-| Coluna             | Comentário
+| Coluna             | Comentários
 |--------------------|-----
 | Id                 | Id do aluno (Oculto e Chave)
 | Aluno              | Buscar o nome no cadastro de pessoas

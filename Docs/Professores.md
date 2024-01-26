@@ -21,7 +21,7 @@ Criar um objeto do tipo "Consulta" para listar os dados dos professores.
 ### Colunas
 Listar as seguintes informações:
 
-| Coluna             | Comentário
+| Coluna             | Comentários
 |--------------------|-----
 | Id                 | Id do Professor (Oculto e Chave)
 | Professor          | Buscar o nome no cadastro de pessoas

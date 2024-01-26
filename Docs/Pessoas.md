@@ -18,7 +18,7 @@ Criar um objeto do tipo "Consulta" para listar os dados do cadastro de pessoas.
 ### Colunas
 Listar as seguintes informações:
 
-| Coluna            | Comentário
+| Coluna            | Comentários
 |-------------------|-----
 | Id                | Id da Pessoa (Oculto e Chave)
 | Nome Completo     | Nome da Pessoa (FirstName + LastName)

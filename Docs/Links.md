@@ -14,7 +14,7 @@ _Atenção: Lembre-se de que para fazer a alteração, será necessário criar u
 Criar um objeto do tipo "Consulta" para listar os links. 
 
 ### Parâmetros
-|   Nome        | Descrição
+|   Nome        | Comentários
 |---------------|-----
 | LinkSetId     | ID do Conjunto de Links, do tipo Numérico
 

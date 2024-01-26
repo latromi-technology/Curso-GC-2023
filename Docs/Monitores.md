@@ -23,7 +23,7 @@ Criar um objeto do tipo "Consulta" para listar os dados dos monitores.
 ### Colunas
 Listar as seguintes informações:
 
-| Coluna             | Comentário
+| Coluna             | Comentários
 |--------------------|-----
 | Id                 | Id do monitor (Oculto e Chave)
 | Monitor            | Buscar o nome no cadastro de pessoas
