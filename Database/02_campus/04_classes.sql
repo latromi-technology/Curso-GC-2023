@@ -2,7 +2,7 @@
 CREATE TABLE classes
 (
     id                  SERIAL NOT NULL,
-    name                VARCHAR(20) NOT NULL,
+    name                TEXT NOT NULL,
     courseid            INT NOT NULL,
     teacherid           INT NOT NULL,
     startdate           DATE,
